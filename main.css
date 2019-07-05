@@ -14,8 +14,20 @@ body {
 	color: white;
 }
 
+.header {
+	background-color: #006F3A;
+}
 
+h5 {
+	font-weight: bold;
+	color: #006F3A;
+}
 
+a:hover {
+	color: #006F3A;
+	text-decoration: underline;
+	background-color: #006F3A;
+}
 
 
 /*Start image slider css*/
