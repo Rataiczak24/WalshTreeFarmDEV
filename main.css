@@ -1,5 +1,21 @@
 /* CSS Document */
 
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
 body {
 /* 	background-color: #006F3A; */
 	background-image: url("images/background.png");
@@ -7,11 +23,6 @@ body {
 	font-size: 12px;
 	color: #006F3A;
 	text-decoration: none;
-}
-
-.page-footer {
-	background-color: #006F3A;
-	color: white;
 }
 
 .header {
@@ -24,9 +35,9 @@ h5 {
 }
 
 a:hover {
-	color: #006F3A;
+	color: black;
 	text-decoration: underline;
-	background-color: #006F3A;
+	text-decoration-color: #006F3A;
 }
 
 
