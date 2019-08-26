@@ -461,7 +461,7 @@ div .slideshow {
 
 /* iphone 6, 7, & 8 PLUS portrait */
 @media only screen 
-and (min-device-width : 668px)
+and (min-device-width : 414px)
 and (max-device-width : 736px)  
 and (orientation : portrait) {
 
@@ -575,7 +575,7 @@ div .slideshow {
 
 /* iphone 6, 7, & 8 PLUS landscape */
 @media only screen 
-and (min-device-width : 668px)
+and (min-device-width : 414px)
 and (max-device-width : 736px)
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation : landscape) {
