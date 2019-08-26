@@ -1,11 +1,20 @@
 /* CSS Document */
 
-/* iphone x */
 
+/* iphone 5 & 5S portrait */
 @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+and (min-device-width : 320px)
+and (max-device-width : 374px)
+and (orientation : portrait) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
 
 body {
 	background-image: url("images/background.png");
@@ -13,6 +22,16 @@ body {
 	font-size: 12px;
 	color: #006F3A;
 	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 50%;
 }
 
 #sticky-footer {
@@ -31,13 +50,19 @@ body {
 }
 
 .wtf-header {
-	width: 350px;
-	height: 120px;
+	width: 100%;
+	height: 100%;
 }
 
-h5 {
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
 	font-weight: bold;
-	font-size: 14px;
+	font-family: 'Sofia';
+	font-size: 13px;
 	color: #006F3A;
 }
 
@@ -47,223 +72,26 @@ a:hover {
 	text-decoration-color: #006F3A;
 }
 
-iframe {
-	height: 200px;
-	width: 100%;
+.border-danger {
+	margin-left: 5%;
 }
 
-.pad-index {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.pad-thefarm {
-	padding-left: 35px;
-}
-.pad-treechoices {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.pad-purchase {
-	padding-left: 10px;
-	padding-right: 10px;
+div iframe {
+	height: 100%;
+	width: 80%;
+	margin-left: 12%;
+	margin-right: 8%;
 }
 
-}
-
-/* end iphone x */
-
-
-
-/* iphone 6, 7, & 8 */
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
+div .slideshow {
+	width: 80%;
+	height: 80%;
+	margin-left: 8%;
 	
-body {
-	background-image: url("images/background.png");
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #006F3A;
-	text-decoration: none;
-}
-
-#sticky-footer {
-  flex-shrink: none;
-  background-color: #006F3A;
-  color: white;
-  margin-right: -15px;
-}
-
-.branch-picture {
-	display: none;
-}
-
-.header {
-	background-color: #006F3A;
-}
-
-.wtf-header {
-	width: 350px;
-	height: 110px;
-}
-
-h5 {
-	font-weight: bold;
-	font-size: 12px;
-	color: #006F3A;
-}
-
-a:hover {
-	color: black;
-	text-decoration: underline;
-	text-decoration-color: #006F3A;
-}
-
-iframe {
-	height: 200px;
-	width: 100%;
-}
-
-.pad-index {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.pad-thefarm {
-	padding-left: 35px;
-}
-.pad-treechoices {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.pad-purchase {
-	padding-left: 10px;
-	padding-right: 10px;
-}	
-	
-	
-}
-/* end iphone 6, 7, & 8 */
-
-
-
-
-/* iphone 6, 7, & 8 plus */
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) {
-body {
-	background-image: url("images/background.png");
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #006F3A;
-	text-decoration: none;
-}
-
-#sticky-footer {
-  flex-shrink: none;
-  background-color: #006F3A;
-  color: white;
-  margin-right: -15px;
-}
-
-.branch-picture {
-	display: none;
-}
-
-.header {
-	background-color: #006F3A;
-}
-
-.wtf-header {
-	width: 350px;
-	height: 110px;
-}
-
-h5 {
-	font-weight: bold;
-	font-size: 14px;
-	color: #006F3A;
-}
-
-a:hover {
-	color: black;
-	text-decoration: underline;
-	text-decoration-color: #006F3A;
-}
-
-iframe {
-	height: 200px;
-	width: 100%;
-}
-
-.pad-index {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.pad-thefarm {
-	padding-left: 50px;
-}
-.pad-treechoices {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.pad-purchase {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-} /* end iphone 6, 7, & 8 plus */
-
-
-
-/* iphone 5 & 5S */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
-
-body {
-	background-image: url("images/background.png");
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #006F3A;
-	text-decoration: none;
-}
-
-#sticky-footer {
-  flex-shrink: none;
-  background-color: #006F3A;
-  color: white;
-  margin-right: -15px;
-}
-
-.branch-picture {
-	display: none;
-}
-
-.header {
-	background-color: #006F3A;
-}
-
-.wtf-header {
-	width: 290px;
-	height: 90px;
-}
-
-h5 {
-	font-weight: bold;
-	font-size: 10px;
-	color: #006F3A;
-}
-
-a:hover {
-	color: black;
-	text-decoration: underline;
-	text-decoration-color: #006F3A;
-}
-
-iframe {
-	height: 200px;
-	width: 100%;
+	border-radius: 0px;
+	padding: 0px;
+	box-shadow: 0px 0px 0px #6f0000;
+	margin-bottom: 0px;
 }
 
 .pad-index {
@@ -283,12 +111,1182 @@ iframe {
 }
 
 }
-/* end iphone 5 & 5S */
+/* end iphone 5 & 5S portrait */
+
+/* iphone 5 & 5S landscape */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	display: none;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+.branch-picture {
+	display: none;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+.wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 28px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 250px;
+	width: 80%;
+	margin-left: 12%;
+	margin-right: 8%;
+}
+
+div .slideshow {
+	width: 80%;
+	height: 80%;
+	margin-left: 8%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end iphone 5 & 5S landscape */
 
 
+/* iphone 6, 7, & 8 portrait */
+@media only screen 
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+	
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 50%;
+}
+
+.branch-picture {
+	display: none;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+div .wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 16px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 100%;
+	width: 80%;
+	margin-left: 12%;
+	margin-right: 10%;
+}
+
+div .slideshow {
+	width: 100%;
+	height: 100%;
+	margin-left: 7%;
+	margin-right: 7%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}	
+	
+	
+}
+/* end iphone 6, 7, & 8 portrait */
+
+
+/* iphone 6, 7, & 8 landscape */
+@media only screen 
+and (min-device-width : 569px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 100%;
+	height: 40%;
+}
+
+#tree_rows {
+	width: 100%;
+	height: 30%;
+}
+
+.branch-picture {
+	width: 50%;
+	height: 50%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+.wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 34px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 250px;
+	width: 80%;
+	margin-left: 12%;
+	margin-right: 8%;
+}
+
+div .slideshow {
+	width: 80%;
+	height: 80%;
+	margin-left: 8%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end iphone 6, 7, & 8 landscape */
+
+
+/* iphone 6, 7, & 8 PLUS portrait */
+@media only screen 
+and (min-device-width : 668px)
+and (max-device-width : 736px)  
+and (orientation : portrait) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 50%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+.branch-picture {
+	display: none;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+.wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 18px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 100%;
+	width: 80%;
+	margin-left: 12%;
+	margin-right: 10%;
+}
+
+div .slideshow {
+	width: 100%;
+	height: 100%;
+	margin-left: 7%;
+	margin-right: 7%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end iphone 6, 7, & 8 PLUS portrait */
+
+
+/* iphone 6, 7, & 8 PLUS landscape */
+@media only screen 
+and (min-device-width : 668px)
+and (max-device-width : 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation : landscape) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 40%;
+}
+
+#tree_rows {
+	width: 90%;
+	height: 30%;
+}
+
+.branch-picture {
+	width: 50%;
+	height: 50%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+.wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 38px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 75vh;
+	width: 130vh;
+	margin-left: 15%;
+}
+
+div .slideshow {
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end iphone 6, 7, & 8 PLUS landscape */
+
+
+/* pixel 2 landscape */
+@media only screen 
+and (min-device-width : 668px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 40%;
+}
+
+#tree_rows {
+	width: 90%;
+	height: 30%;
+}
+
+.branch-picture {
+	width: 50%;
+	height: 50%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+.wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 38px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 75vh;
+	width: 130vh;
+	margin-left: 15%;
+}
+
+div .slideshow {
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end pixel 2 landscape */
+
+
+/* iphone x portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 413px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 50%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+}
+
+.branch-picture {
+	display: none;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+div .wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 16px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 100%;
+	width: 80%;
+	margin-left: 12%;
+	margin-right: 10%;
+}
+
+div .slideshow {
+	width: 100%;
+	height: 100%;
+	margin-left: 7%;
+	margin-right: 7%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end iphone x portrait */
+
+
+/* iphone x landscape */
+@media only screen 
+and (min-device-width : 737px)
+and (max-device-width : 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation : landscape) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 40%;
+}
+
+#tree_rows {
+	width: 90%;
+	height: 40%;
+}
+
+.branch-picture {
+	width: 40%;
+	height: 40%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+.wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 38px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+iframe {
+	height: 75vh;
+	width: 130vh;
+}
+
+div .slideshow {
+	width: 80%;
+	height: 80%;
+	margin-left: 3%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end iphone x landscape */
+
+
+/* ipad portrait */
+@media only screen 
+and (min-device-width : 737px) 
+and (max-device-width : 991px) 
+and (orientation : portrait) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 40%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+#tree_rows {
+	width: 90%;
+	height: 35%;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+div .wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 24px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 30vh;
+	width: 60vh;
+	margin-left: 2%;
+}
+
+div .slideshow {
+	width: 60%;
+	height: 600%;
+	margin-left: 7%;
+	margin-right: 7%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end ipad portrait */
+
+
+/* pixel 2 xl landscape */
+@media only screen 
+and (min-device-width : 813px) 
+and (max-device-width : 991px) 
+and (orientation : landscape) {
+
+html,
+body {
+  height: 102%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006F3A;
+	text-decoration: none;
+}
+
+#opening {
+	width: 100%;
+	height: 100%;
+}
+
+#owners {
+	width: 80%;
+	height: 40%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #006F3A;
+  color: white;
+  margin-right: -15px;
+}
+
+#tree_rows {
+	width: 90%;
+	height: 35%;
+}
+
+.header {
+	background-color: #006F3A;
+}
+
+div .wtf-header {
+	width: 100%;
+	height: 100%;
+}
+
+.standout {
+	font-family: 'Sofia';
+	font-size: 16px;
+}
+
+div a h5 {
+	font-weight: bold;
+	font-family: 'Sofia';
+	font-size: 24px;
+	color: #006F3A;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #006F3A;
+}
+
+.border-danger {
+	margin-left: 5%;
+}
+
+div iframe {
+	height: 70vh;
+	width: 120vh;
+	margin-left: 2%;
+}
+
+div .slideshow {
+	width: 60%;
+	height: 600%;
+	margin-left: 7%;
+	margin-right: 7%;
+	
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 5px 10px 30px #6f0000;
+	margin-bottom: 25px;
+}
+
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pad-index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-thefarm {
+	padding-left: 8px;
+}
+.pad-treechoices {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pad-purchase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}
+/* end pixel 2 xl landscape */
 
 
 /* desktop */
+@media only screen 
+and (min-device-width : 992px) {
 html,
 body {
   height: 100%;
@@ -348,10 +1346,13 @@ a:hover {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+}
+/* end desktop */
+
+
+
 
 /*Start image slider css*/
-
-
 
 #sliderFrame, #sliderFrame div {
     box-sizing: content-box;
